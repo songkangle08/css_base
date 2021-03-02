@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            float:left;
+            margin: 10px;
+            background: red url('img/hs.jpg') no-repeat;
+        }
+        .box1{
+            width: 400px;
+            height: 400px;
+            background-size: 50px 50px;  /*length 第二个参数不写为auto*/ 
+        }
+        .box2{
+            width: 400px;
+            height: 600px;
+            background-size: 10% auto;  /* 百分比 第二个参数不写为auto */
+        }
+        .box3{
+            width: 400px;
+            height: 600px;
+            background-size: cover;  /* 完全的覆盖，充满 宽高同时等比例，经常出现裁剪的情况 */
+        }
+        .box4{
+            width: 400px;
+            height: 600px;
+            background-size: contain;  /* 宽度或者高度等比例缩放，会出现留白 */
+        }
+        .box5{
+            width: 300px;
+            height: 200px;
+            background-size: auto;  /* 自动，当图片的宽度或者宽度不够，该裁剪就裁剪，该留白就留白 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>
